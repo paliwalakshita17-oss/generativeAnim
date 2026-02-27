@@ -3,12 +3,35 @@
 // Variables for the eyes
 let eyeX = 0;      //zero movement in the beginning
 let eyeSpeed = 1;  // for speed
-  
+ let spiderY = -50; 
 function setup(){createCanvas(400, 500);}
 
 function draw() {
   // Bg color
   background(220, 80, 40);
+
+  if (mouseIsPressed) {
+    spiderY = spiderY + 3;
+    if (spiderY > 500) { 
+      spiderY = -50;
+     }
+
+    // Draw the spiders
+    
+    stroke(0);
+    strokeWeight(1);
+    // Spider 1
+    line(50, 0, 50, spiderY); fill(0);
+     ellipse(50, spiderY, 15, 12);
+    // Spider 2
+    line(350, 0, 350, spiderY + 100); 
+    ellipse(350, spiderY + 100, 15, 12);
+    // Spider 3
+    line(200, 0, 200, spiderY - 200); 
+    ellipse(200, spiderY - 200, 15, 12);
+  } else {
+    spiderY = -50; // Hide them when mouse is not pressed
+  }
 
   // hair (Back)
   fill(0); // Black color fill
@@ -45,10 +68,10 @@ function draw() {
 
     
    if (eyeX > 7) {
-      eyeSpeed = -1; //  move left
+      eyeSpeed = -0.5; //  move left
     }
     if (eyeX < -7) {
-      eyeSpeed = 1;  //  move right
+      eyeSpeed = 0.5;  //  move right
     }
 
   
