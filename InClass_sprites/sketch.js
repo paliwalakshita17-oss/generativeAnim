@@ -7,7 +7,7 @@ let celW,celH;
 let cels=[];
 
 function preload(){
-  spriteSheet=loadImage("./sprites/walk.png")
+  spriteSheet=loadImage("./sprites/explosionFull.png")
 }
 function setup() {
  // background(0)
@@ -27,7 +27,7 @@ for(let i = 0 ; i < sY ; i++)
 function draw() {
   background(0)
   
-image(cels[frameCount%sX*sY]);
+image(cels[frameCount % (sX*sY)], 0, 0);
 
 
 }

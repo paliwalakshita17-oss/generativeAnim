@@ -1,15 +1,14 @@
  Generative Grid
 
  Concept
- It creates a "typewriter" effect where the computer moves across the screen, flipping a coin to decide which shape to draw next.
+ It creates a "typewriter" effect where the computer moves across the screen.
 How it Works
 
 The Grid uses a `spacing` variable (100px) to divide the canvas into equal tiles.
 
 Probability Logic:
-10% Chance:** Draws a Square (`rect`).
-90% Chance:** Draws a Circle(`ellipse`).
-
+10% Chance: Draws a Square (`rect`).
+90% Chance: Draws a Circle(`ellipse`).
 
 The Loop: The `x` coordinate resets to zero and increases `y` whenever it hits the edge of the window, perfectly filling the screen row by row.
 
