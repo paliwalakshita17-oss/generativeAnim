@@ -51,7 +51,7 @@ function draw() {
 
   // Bangs
   fill(0); //black
-  // Three rectangles for fringe
+  // Three rectangles for  fringe
   rect(125, 100, 45, 60);
   rect(175, 100, 50, 50);
   rect(230, 100, 45, 60);

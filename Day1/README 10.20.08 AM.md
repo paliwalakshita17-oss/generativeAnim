@@ -41,7 +41,7 @@ To keep the eyes from moving off the face, I used "If Statements" to create wall
 
 The Boundary: I chose 7 pixels as the limit. If the pupil moves further than 7 pixels from the center, the eyeSpeed reverses (multiplies by -1).
 
-Visual Elements
+4. Visual Elements
 
 Geometry: I used a triangle for the chin to give the face a sharp, stylized look.
 
